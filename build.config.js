@@ -13,6 +13,7 @@ module.exports = {
   //   demo: '_demo/index',
   // },
   entry: mpaEntries.entry,
+  publicPath: './',
   outputDir: 'docs',
   plugins: [
     [
