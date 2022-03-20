@@ -22,6 +22,7 @@
     "stylelint": "^13.1.0"
   },
   "scripts": {
+    "dev": "npm run start",
     "start": "icejs start --config build.config.js",
     "build": "icejs build --config build.config.js",
     "lint": "npm run eslint && npm run stylelint",
