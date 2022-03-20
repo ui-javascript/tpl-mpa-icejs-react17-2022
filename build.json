@@ -1,0 +1,14 @@
+{
+  "minify": "esbuild",
+  "entry": {
+    "demo": "_demo/index"
+  },
+  "plugins": [
+    [
+      "build-plugin-ignore-style",
+      {
+        "libraryName": "antd"
+      }
+    ]
+  ]
+}
