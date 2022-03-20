@@ -22,7 +22,7 @@ function shouldReadAsEntry(moduleName) {
   return moduleName.charAt(0).match(/^.*[a-z]+.*$/) && moduleName.indexOf('use') !== 0;
 }
 
-exports.default = function getEntry(globPath) {
+exports.getEntry = function getEntry(globPath) {
   const entries = {};
 
   glob.sync(globPath).forEach((entry) => {
@@ -61,7 +61,7 @@ exports.default = function getEntry(globPath) {
     // console.log(uuid)
     browserPages.push(`http://localhost:${port}/${uuid}.html`);
 
-    entries[uuid] = [entry];
+    entries[uuid] = entry;
   });
 
   console.log('-------页面--------');

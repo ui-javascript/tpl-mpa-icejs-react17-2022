@@ -1,17 +1,18 @@
-// import getEntry from './mpa.utils'
-// const CONFIG = require('./mpa.config')
+const { getEntry } = require('./mpa.utils')
+const { CONFIG } = require('./mpa.config')
 
-// const mpaConfig = getEntry(CONFIG.entry);
-// console.log(mpaConfig)
+const mpaEntries = getEntry(CONFIG.entry);
+console.log(mpaEntries.entry)
 
 module.exports = {
   define: {
     env: process.env.NODE_ENV,
   },
   minify: 'esbuild',
-  entry: {
-    demo: '_demo/index',
-  },
+  // entry: {
+  //   demo: '_demo/index',
+  // },
+  entry: mpaEntries.entry,
   outputDir: 'docs',
   plugins: [
     [
