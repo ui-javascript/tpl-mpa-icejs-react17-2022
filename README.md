@@ -4,6 +4,7 @@ React多页面
 
 # 常见问题 @faq
 
+- 依赖安装时间长 @todo
 - entry 为 object 且为 vite模式 时启动报错 @todo
     - https://github.com/alibaba/ice/issues/5237
 
