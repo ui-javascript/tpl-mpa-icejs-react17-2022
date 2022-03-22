@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Ant Design and icejs scaffold, use TypeScript.",
   "scripts": {
-    "install": "npm install --registry=https://registry.npm.taobao.org",
+    "install": "sudo apt-get update && sudo apt-get install xdg-utils && yarn install",
+    "install:mirror": "npm install --registry=https://registry.npm.taobao.org",
     "dev": "npm run start",
     "start": "icejs start --config build.config.js",
     "build": "icejs build --config build.config.js",
