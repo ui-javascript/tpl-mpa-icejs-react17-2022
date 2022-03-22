@@ -17,7 +17,9 @@ React多页面
 
 ```
 sudo apt-get update
-sudo apt-get install xdg-utils
+sudo apt-get -y install xdg-utils
+
+在.gitpod.yml初始化脚本里加上这两句话
 ```
 
 ![](https://luo0412.oss-cn-hangzhou.aliyuncs.com/1647922947944-4Fc8cFeyAnre.png)
